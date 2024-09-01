@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+</head>
+<style>
+    /* .boxes :first-child {
+        background-color: red;
+    } */
+
+    /* .box::first-line {
+        color: ;
+    } */
+
+    /* .boxes * {
+        color: blue;
+        border: 2px solid black;
+    } */
+
+    /* Universal selector
+        boxes ke andar sare elements ko vo property lag jayegi */
+
+
+    /* p,
+    a,
+    .box,
+    [data-color="primary"] {
+        padding: 45px;
+    } */
+
+    /* .box:nth-child(odd) {
+        background-color: blue;
+    } */
+
+    /* .box:nth-last-child(2){
+        background-color: red;
+    } */
+
+    .boxes::before {
+        content: "Heloo guys";
+        color: blue;
+    }
+
+    .boxes::after {
+        content: "Sigma course is good";
+        color: red;
+    }
+
+    ::selection{
+        color: aqua;
+        background-color: brown;
+    }
+
+    .box::first-letter{
+        color: peru;
+        font-size: 45px;
+    }
+    input::placeholder{
+        color: rgb(84, 84, 88);
+    }
+</style>
+
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">I am a first box</div>
+        <div class="box">Hey I am a box</div>
+        <div class="box">Hey I am a box</div>
+        <input type="text" placeholder="Type your name here">
+    </div>
+</body>
+
+</html>
